@@ -1,0 +1,28 @@
+{
+    "name": "blackknight467/StarRatingBundle",
+    "type": "symfony-bundle",
+    "description": "Star Rating Bundle for use with Symfony 2.  This bundle adds the 'rating' form type.  Simple and easy to use.",
+    "keywords": ["rating", "star", "bundle", "symfony", "symfony2",],
+    "homepage": "http://github.com/blackknight467/StarRatingBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Derick Felsman",
+            "email": "derickfelsman@gmail.com"
+        }
+        {
+            "name": "Steven Ng"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.1"
+    },
+    "autoload": {
+        "psr-0": { "blackknight467\\StarRatingBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "blackknight467/StarRatingBundle"
+}
