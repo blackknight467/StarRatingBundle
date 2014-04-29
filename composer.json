@@ -2,7 +2,7 @@
     "name": "blackknight467/star-rating-bundle",
     "type": "symfony-bundle",
     "description": "Star Rating Bundle for use with Symfony 2.  This bundle adds the 'rating' form type.  Simple and easy to use.",
-    "keywords": ["rating", "star", "bundle", "symfony", "symfony2",],
+    "keywords": ["rating", "star", "bundle", "symfony", "symfony2"],
     "homepage": "http://github.com/blackknight467/StarRatingBundle",
     "license": "MIT",
     "authors": [
