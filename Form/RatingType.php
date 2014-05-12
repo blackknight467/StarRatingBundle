@@ -1,6 +1,6 @@
 <?php
 
-namespace blackknight467\StarRatingBundle\Type;
+namespace blackknight467\StarRatingBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
