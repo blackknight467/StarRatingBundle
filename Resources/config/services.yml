@@ -1,0 +1,7 @@
+parameters:
+
+services:
+    star_rating.type:
+        class: blackknight467\StarRatingBundle\Type\RatingType
+        tags:
+            - { name: form.type, alias: rating }

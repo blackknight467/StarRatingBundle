@@ -1,0 +1,6 @@
+{# blackknight467/AYAHBundle/Resources/views/ayah.html.twig #}
+{% block rating_widget %}
+{% spaceless %}
+    <input type="radio" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />
+{% endspaceless %}
+{% endblock %}
