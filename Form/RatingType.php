@@ -10,6 +10,9 @@ class RatingType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
+            'attr' => array(
+                'class' => 'rating',
+            ),
             'expanded' => true,
             'choices' => array(1 => '1 star', 2 => '2 stars', 3 => '3 stars', 4 => '4 stars', 5 => '5 stars')
         ));
