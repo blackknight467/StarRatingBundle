@@ -3,7 +3,8 @@ StarRatingBundle
 
 Star Rating Bundle for Symfony 2.  Requires Jquery and Font Awesome.
 
-***Sample***
+Sample Output
+=============
 
 ![alt tag](http://images.trifecktasoftware.com/profile/test/StarRating.png)
 
