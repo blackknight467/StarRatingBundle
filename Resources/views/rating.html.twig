@@ -3,10 +3,12 @@
 {% spaceless %}
     <div {{ block('widget_container_attributes') }}>
     	{{ block('form_label') }}
-    {% for child in form %}
-        {{ form_widget(child, { 'attr': {'class': 'star'} }) }}
-        {{ form_label(child, null, {'label-attr': {'class':'star'}}) }}
-    {% endfor %}
+    	<div class="rating-well">
+		    {% for child in form %}
+		        {{ form_widget(child, { 'attr': {'class': 'star'} }) }}
+		        <div class="star"></div>
+		    {% endfor %}
+			</div>
     </div>
 {% endspaceless %}
 {% endblock rating_widget %}
