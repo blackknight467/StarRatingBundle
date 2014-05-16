@@ -43,8 +43,24 @@
   display:inline-block;
   position: relative;
 }
+
 .rating div.star-full:before  {
   content:"\f005";
   padding-right:5px;
   color:#e3cf7a;
+}
+
+.rating div.star-empty {
+  font-family:FontAwesome;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 25px; 
+  display:inline-block;
+  position: relative;
+}
+
+.rating div.star-empty:before  {
+  content:"\f006";
+  padding-right:5px;
+  color:#999;
 }

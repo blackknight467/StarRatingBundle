@@ -72,13 +72,38 @@ Add the javascript to your page head
 Usage
 =====
 
-###Add to your page head
+###In a Form
 
 ```php
 <?php
     // ...
-    $builder->add('rating', 'rating'); // That's all !
+    $builder->add('rating', 'rating');
     // ...
+```
+or for a custom rating scale:
+```php
+<?php
+    // ...
+    $builder->add('rating', 'rating', array(
+    	//...
+    	'choices' => array(4 => '4 stars', 3 => '3 stars', 2 => '2 stars', 1 => '1 star'),
+    	//...
+    ));
+    // ...
+```
+
+NOTE: Numbers go  in reverse from highest to lowest and non-empty labels are required for each level (otherwise symfony will mess with the values and the widget will break)
+
+###Display in a twig template using the rating filter
+```
+    // ...
+    {{ someInteger|rating|raw }}
+    // ...
+```
+
+or if you are not using a 5 star scale
+```
+{{ someInteger|rating(4)|raw }}
 ```
 
 License
