@@ -1,5 +1,5 @@
 {# blackknight467/StarRatingBundle/Resources/views/rating.html.twig #}
-{% block rating2_widget %}
+{% block rating_widget %}
 {% spaceless %}
     <div {{ block('rating_widget_container_attributes') }}>
         {# type="number" doesn't work with floats #}
@@ -13,7 +13,7 @@
         </div>
     </div>
 {% endspaceless %}
-{% endblock rating2_widget %}
+{% endblock rating_widget %}
 
 {% block rating_widget_container_attributes %}
 {% spaceless %}
