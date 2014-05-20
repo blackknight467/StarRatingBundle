@@ -1,10 +1,10 @@
 $(function(){
-	var labelWasClicked = function labelWasClicked(){
-        var input = $(this).prev();
-        input.prop('checked',true);
+    var labelWasClicked = function labelWasClicked(){
+        var input = $(this).siblings().filter('input');
+        input.val($(this).attr('data-value'));
     }
     
-	var turnToStar = function turnToStar(){
+    var turnToStar = function turnToStar(){
         var labels = $(this).find('div');
         labels.removeClass();
         labels.addClass('star');
@@ -12,11 +12,14 @@ $(function(){
     }
 
     var turnStarBack = function turnStarBack(){
-        var rating = $(this).find('input:checked');
-        if (rating != null) {
-            var prevLabels = $(rating).nextAll().filter('div');
+        var rating = parseInt($(this).find('input').val());
+        if (rating > 0) {
+            var selectedStar = $(this).children().filter('#rating_star_'+rating)
+            var prevLabels = $(selectedStar).nextAll();
             prevLabels.removeClass();
             prevLabels.addClass('star-full');
+            selectedStar.removeClass();
+            selectedStar.addClass('star-full');
         }
     }
 

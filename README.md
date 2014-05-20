@@ -77,7 +77,9 @@ Usage
 ```php
 <?php
     // ...
-    $builder->add('rating', 'rating');
+    $builder->add('rating', 'rating', array(
+    	'label' => 'Rating'
+    ));
     // ...
 ```
 or for a custom rating scale:
@@ -86,13 +88,11 @@ or for a custom rating scale:
     // ...
     $builder->add('rating', 'rating', array(
     	//...
-    	'choices' => array(4 => '4 stars', 3 => '3 stars', 2 => '2 stars', 1 => '1 star'),
+    	'stars' => 4,
     	//...
     ));
     // ...
 ```
-
-NOTE: Numbers go  in reverse from highest to lowest and non-empty labels are required for each level (otherwise symfony will mess with the values and the widget will break)
 
 ###Display in a twig template using the rating filter
 ```
