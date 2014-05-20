@@ -35,6 +35,6 @@ class RatingType extends AbstractType
 
     public function getName()
     {
-        return 'rating2';
+        return 'rating';
     }
 }
