@@ -23,7 +23,7 @@ class StarRatingExtension extends \Twig_Extension
 
     public function rating($number, $max = 5)
     {
-    	return $this->container->get('templating')->render('StarRatingBundle:ratingDisplay.html.twig', array('stars' => $number,'max' => $max));
+    	return $this->container->get('templating')->render('StarRatingBundle:Display:ratingDisplay.html.twig', array('stars' => $number,'max' => $max));
     }
 
     public function getName()
