@@ -8,7 +8,6 @@ $(function(){
         var labels = $(this).find('div');
         labels.removeClass();
         labels.addClass('star');
-        $('.star').click(labelWasClicked);
     }
 
     var turnStarBack = function turnStarBack(){
@@ -23,6 +22,7 @@ $(function(){
         }
     }
 
+    $('.star, .rating-well').click(labelWasClicked);
     $('.rating-well').each(turnStarBack);
     $('.rating-well').hover(turnToStar,turnStarBack);
 
