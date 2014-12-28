@@ -18,7 +18,7 @@ Installation
 Add the following to the "require" section of your `composer.json` file:
 
 ```
-    "blackknight467/star-rating-bundle": "dev-master"
+    "blackknight467/star-rating-bundle": "1.*"
 ```
 
 ### Step 2: Enable the bundle
