@@ -17,7 +17,7 @@ class StarRatingExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            new \Twig_SimpleFilter('rating', array($this, 'rating')),
+            new \Twig_SimpleFilter('rating', array($this, 'rating'), array('is_safe' => array('all'))),
         );
     }
 

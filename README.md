@@ -97,13 +97,13 @@ or for a custom rating scale:
 ###Display in a twig template using the rating filter
 ```
     // ...
-    {{ someInteger|rating|raw }}
+    {{ someInteger|rating }}
     // ...
 ```
 
 or if you are not using a 5 star scale
 ```
-{{ someInteger|rating(4)|raw }}
+{{ someInteger|rating(4) }}
 ```
 
 License
