@@ -1,66 +1,92 @@
 .rating {
-  font-size:16px;
+    font-size:16px;
 }
 
 .rating-well {
-  display: inline-block;
-  direction: rtl;
+    display: inline-block;
+    direction: rtl;
 }
 
 .rating input.rating {
-  display: none;
+    display: none;
 }
 
 .rating div.star {
-  font-family:FontAwesome;
-  font-weight:normal;
-  font-style:normal;
-  font-size: 25px; 
-  display:inline-block;
-  position: relative;
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 25px;
+    display:inline-block;
+    position: relative;
 }
 
 .rating div.star:hover {
-  cursor:pointer;
+    cursor:pointer;
 }
 
 .rating div.star:before {
-  content:"\f006";
-  padding-right:5px;
-  color:#999;
+    content:"\f006";
+    padding-right:5px;
+    color:#999;
 }
 
 .rating div.star:hover:before,.rating div.star:hover~div.star:before {
-  content:"\f005";
-  color:#e3cf7a;
+    content:"\f005";
+    color:#e3cf7a;
 }
 
 .rating div.star-full {
-  font-family:FontAwesome;
-  font-weight:normal;
-  font-style:normal;
-  font-size: 25px; 
-  display:inline-block;
-  position: relative;
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 25px;
+    display:inline-block;
+    position: relative;
 }
 
 .rating div.star-full:before  {
-  content:"\f005";
-  padding-right:5px;
-  color:#e3cf7a;
+    content:"\f005";
+    padding-right:5px;
+    color:#e3cf7a;
 }
 
 .rating div.star-empty {
-  font-family:FontAwesome;
-  font-weight:normal;
-  font-style:normal;
-  font-size: 25px; 
-  display:inline-block;
-  position: relative;
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 25px;
+    display:inline-block;
+    position: relative;
 }
 
 .rating div.star-empty:before  {
-  content:"\f006";
-  padding-right:5px;
-  color:#999;
+    content:"\f006";
+    padding-right:5px;
+    color:#999;
+}
+
+.rating div.fa-norm {
+    font-size: 1em;
+}
+
+.rating div.fa-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+.rating div.fa-2x {
+    font-size: 2em;
+}
+
+.rating div.fa-3x {
+    font-size: 3em;
+}
+
+.rating div.fa-4x {
+    font-size: 4em;
+}
+
+.rating div.fa-5x {
+    font-size: 5em;
 }

@@ -106,6 +106,13 @@ or if you are not using a 5 star scale
 {{ someInteger|rating(4) }}
 ```
 
+if you want to use the [font awesome icon sizes](http://fortawesome.github.io/Font-Awesome/examples/#larger)
+```
+{{ someInteger|rating(5, "fa-3x") }}
+```
+If you want the smallest size use "fa-norm" (in font awesome, this would be the same as not providing an size class); providing no size argument sets the font size to 25px which is somewhere in between "fa-lg" and "fa-2x".
+To customize the size, feel free to override the css.
+
 License
 =======
 This bundle is under the MIT license. See the complete license in the bundle:
