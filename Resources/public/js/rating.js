@@ -1,10 +1,16 @@
 $(function(){
     var labelWasClicked = function labelWasClicked(){
         var input = $(this).siblings().filter('input');
+        if (input.attr('disabled')) {
+            return;
+        }
         input.val($(this).attr('data-value'));
     }
-    
+
     var turnToStar = function turnToStar(){
+        if ($(this).find('input').attr('disabled')) {
+            return;
+        }
         var labels = $(this).find('div');
         labels.removeClass();
         labels.addClass('star');
