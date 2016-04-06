@@ -1,7 +1,7 @@
 StarRatingBundle
 ================
 
-Star Rating Bundle for Symfony 2.  Requires Jquery and Font Awesome.
+Star Rating Bundle for Symfony 3.  Requires Jquery and Font Awesome.
 
 Sample Output
 =============
@@ -18,7 +18,7 @@ Installation
 Add the following to the "require" section of your `composer.json` file:
 
 ```
-    "blackknight467/star-rating-bundle": "1.*"
+    "blackknight467/star-rating-bundle": "2.*"
 ```
 
 ### Step 2: Enable the bundle
@@ -45,9 +45,7 @@ Add the css in your page head
 ```
   <link rel="stylesheet" type="text/css" href="{{ asset('bundles/starrating/css/rating.css') }}" />
 ```
-
-or 
-
+or
 ```
 	{% stylesheets
       'bundles/starrating/css/rating.css'
@@ -59,7 +57,12 @@ or
 ### Step 4: Add the js
 
 Add the javascript to your page head
-
+```
+    <!-- make sure that jquery is included --!>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="{{ asset('bundles/starrating/js/rating.js') }}"></script>
+```
+or
 ```
     <!-- make sure that jquery is included --!>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -77,20 +80,20 @@ Usage
 ```php
 <?php
     // ...
-    $builder->add('rating', 'rating', array(
+    $builder->add('rating', RatingType::class, [
     	'label' => 'Rating'
-    ));
+    ]);
     // ...
 ```
 or for a custom rating scale:
 ```php
 <?php
     // ...
-    $builder->add('rating', 'rating', array(
+    $builder->add('rating', RatingType::class, [
     	//...
     	'stars' => 4,
     	//...
-    ));
+    ]);
     // ...
 ```
 

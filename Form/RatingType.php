@@ -3,7 +3,8 @@
 namespace blackknight467\StarRatingBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 
@@ -12,25 +13,25 @@ class RatingType extends AbstractType
 
     public function buildView(FormView $view, FormInterface $form, array $options)
     {
-        $view->vars = array_replace($view->vars, array(
+        $view->vars = array_replace($view->vars, [
             'stars' => $options['stars']
-        ));
+        ]);
     }
 
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(array(
-            'attr' => array(
+        $resolver->setDefaults([
+            'attr' => [
                 'class' => 'rating',
-            ),
-            'precision' => 1,
+            ],
+            'scale' => 1,
             'stars' => 5,
-        ));
+        ]);
     }
 
     public function getParent()
     {
-        return 'number';
+        return NumberType::class;
     }
 
     public function getName()

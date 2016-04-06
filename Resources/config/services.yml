@@ -10,4 +10,4 @@ services:
         class: blackknight467\StarRatingBundle\Extensions\StarRatingExtension
         tags: [{ name: twig.extension }]
         arguments:
-            - @service_container
+            - '@service_container'
