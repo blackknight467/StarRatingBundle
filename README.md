@@ -6,7 +6,7 @@ Star Rating Bundle for Symfony 3.  Requires Jquery and Font Awesome.
 Sample Output
 =============
 
-![alt tag](http://images.trifecktasoftware.com/profile/test/StarRating.png)
+![alt tag](https://s3-us-west-2.amazonaws.com/derick-misc/StarRating.png)
 
 Installation
 ============
