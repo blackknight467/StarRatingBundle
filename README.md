@@ -77,7 +77,7 @@ or
 Usage
 =====
 
-###In a Form
+### In a Form
 
 ```php
 <?php
@@ -99,7 +99,7 @@ or for a custom rating scale:
     // ...
 ```
 
-###Display in a twig template using the rating filter
+### Display in a twig template using the rating filter
 ```
     // ...
     {{ someInteger|rating }}
